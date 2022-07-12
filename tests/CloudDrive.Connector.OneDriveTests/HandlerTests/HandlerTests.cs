@@ -31,7 +31,7 @@ namespace Xamarin.CloudDrive.Connector.OneDriveTests
          var value = handler.CreateMessage(httpCode, httpContent);
 
          Assert.Equal(httpCode, value.StatusCode);
-         Assert.Null(value.Content);
+         Assert.NotNull(value.Content);
       }
 
       [Fact]
