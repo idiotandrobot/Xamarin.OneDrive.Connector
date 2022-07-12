@@ -33,10 +33,10 @@ namespace Xamarin.CloudDrive.Connector.OneDriveTests
             .AddOneDriveConnector("clientID", "clientSecret", "redirectUri", new string[] { "scopes" })
             .BuildServiceProvider();
 
-         var value = Assert.Throws<MsalClientException>(() => serviceProvider.GetService<OneDriveService>());
+         var value = Assert.Throws<InvalidOperationException>(() => serviceProvider.GetService<OneDriveService>());
 
          Assert.NotNull(value);
-         Assert.Equal("Error: ClientId is not a Guid.", value.Message);
+         Assert.Equal("Invalid RedirectURI was received (redirectUri)  Not parseable into System.Uri class. ", value.Message);
       }
 
       [Fact]

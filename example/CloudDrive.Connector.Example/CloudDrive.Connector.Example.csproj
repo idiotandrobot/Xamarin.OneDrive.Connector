@@ -12,8 +12,8 @@
    </PropertyGroup>
 
    <ItemGroup>
-      <PackageReference Include="Xamarin.Forms" Version="4.6.0.967" />
-      <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+      <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
+      <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
       <ProjectReference Include="..\..\sources\CloudDrive.Connector.Common\CloudDrive.Connector.Common.csproj" />
       <ProjectReference Include="..\..\sources\CloudDrive.Connector.LocalDrive\CloudDrive.Connector.LocalDrive.csproj" />
       <ProjectReference Include="..\..\sources\CloudDrive.Connector.OneDrive\CloudDrive.Connector.OneDrive.csproj" />
